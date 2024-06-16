@@ -1,15 +1,3 @@
-import { IsString } from 'class-validator';
-
-export class CreateUserDTO {
-  @IsString()
-  firstName: string;
-
-  @IsString()
-  userName: string;
-
-  @IsString()
-  email: string;
-
-  @IsString()
-  password: string;
-}
+export { default as CreateUserDTO } from './CreateUserDTO';
+export { default as UpdateUserDTO } from './UpdateUserDTO';
+export { default as DeleteUserDTO } from './DeleteUserDTO';
