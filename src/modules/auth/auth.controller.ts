@@ -25,11 +25,6 @@ export class AuthController {
   }
 
   @UseGuards(JwtGuard)
-  @Post('test')
-  test() {
-    return true;
-  }
-
   @ApiResponse({ status: 200 })
   @Post('logout')
   logout() {

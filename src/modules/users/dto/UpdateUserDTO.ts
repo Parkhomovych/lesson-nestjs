@@ -1,13 +1,18 @@
-import { IsString, IsOptional, IsJWT } from 'class-validator';
+import { IsString, IsOptional } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export default class UpdateUserDTO {
   @ApiProperty({ required: true })
-  @IsJWT()
-  token: string;
+  @IsString()
+  email: string;
 
-  @ApiProperty({ required: false })
+  @ApiProperty({ required: true })
   @IsString()
   @IsOptional()
-  name?: string;
+  firstName?: string;
+
+  @ApiProperty({ required: true })
+  @IsString()
+  @IsOptional()
+  userName?: string;
 }

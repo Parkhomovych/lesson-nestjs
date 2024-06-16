@@ -4,7 +4,11 @@ import { IsString } from 'class-validator';
 export default class AuthUserResponse {
   @ApiProperty()
   @IsString()
-  name: string;
+  firstName: string;
+
+  @ApiProperty()
+  @IsString()
+  userName: string;
 
   @ApiProperty()
   @IsString()
