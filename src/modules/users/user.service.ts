@@ -17,6 +17,8 @@ export class UserService {
     return this.UserRepository.findOne({ where: { email } });
   }
   async findUserById(id: string) {
+    console.log(1);
+
     return this.UserRepository.findOne({ where: { id } });
   }
 
