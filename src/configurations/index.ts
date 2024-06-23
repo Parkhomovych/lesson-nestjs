@@ -7,6 +7,8 @@ export default () => ({
   db_password: process.env.DB_PASSWORD,
   db_name: process.env.DB_DATABASE,
   // JWT
-  secret_jwt: process.env.SECRET,
-  expire_jwt: process.env.EXPIRE_JWT,
+  secret_jwt: process.env.SECRET_TOKEN,
+  expire_jwt: process.env.EXPIRE_TOKEN,
+  secret_refresh_jwt: process.env.SECRET_REFRESH_TOKEN,
+  expire_refresh_jwt: process.env.EXPIRE_REFRESH_TOKEN,
 });

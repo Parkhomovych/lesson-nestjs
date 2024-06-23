@@ -3,6 +3,7 @@ import { IsString, IsEmail } from 'class-validator';
 
 export default class CreateUserDTO {
   @ApiProperty({ required: true })
+  @IsString()
   @IsEmail()
   email: string;
 

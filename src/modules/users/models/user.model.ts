@@ -16,4 +16,10 @@ export class User extends Model {
 
   @Column
   list: string;
+
+  @Column
+  token: string;
+
+  @Column
+  refreshToken: string;
 }

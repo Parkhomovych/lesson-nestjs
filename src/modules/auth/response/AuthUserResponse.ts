@@ -16,9 +16,9 @@ export default class AuthUserResponse {
 
   @ApiProperty()
   @IsString()
-  password: string;
+  token: string;
 
   @ApiProperty()
   @IsString()
-  token: string;
+  refreshToken: string;
 }
